@@ -23,8 +23,12 @@ const byname = () => {
           <h1 className="text-3xl mb-5">Enter the drink name below:</h1>
         </div>
         <div className="flex flex-col items-center w-3/4">
-          <input className='w-1/2 h-10 mb-10 text-black rounded-md p-2' onChange={event => setSearchParams(event.target.value)}/>
-          <button className='border rounded-md p-3 text-xl w-1/5' onClick={() => handleSubmit()}>Search Our Database</button>
+          <input
+            className='w-1/2 h-10 mb-10 text-black rounded-md p-2'
+            onChange={event => setSearchParams(event.target.value)}/>
+          <button 
+            className='border rounded-md p-3 text-xl w-1/5'
+            onClick={() => handleSubmit()}>Search Our Database</button>
         </div>
       </main>
     </>

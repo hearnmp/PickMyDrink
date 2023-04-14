@@ -13,7 +13,7 @@ const byingredient = () => {
           <h1 className='text-2xl'>Ex. Vodka, Lemon Juice</h1>
         </div>
         <div className="flex flex-col items-center w-3/4">
-          <input className='w-1/2 h-10 mb-10 text-black rounded-md'/>
+          <input className='w-1/2 h-10 mb-10 text-black rounded-md p-2'/>
           <button className='border rounded-md p-3 text-xl w-1/5'>Search Drink Options</button>
         </div>
       </main>

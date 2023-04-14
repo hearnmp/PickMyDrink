@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <head>
-        <title>Pick My Drink</title>
+        <title>Best Buzz</title>
       </head>
 
       <main className="flex min-h-screen flex-col items-center justify-center text-center">

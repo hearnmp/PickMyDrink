@@ -4,10 +4,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 export default function Home() {
   return (
     <>
-      <head>
-        <title>Best Buzz</title>
-      </head>
-
       <main className="flex min-h-screen flex-col items-center justify-center text-center">
         <div className="flex hover:cursor-pointer self-end fixed top-0 right-0 m-3">
           <MenuIcon sx={{ fontSize: 60 }}/>

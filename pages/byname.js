@@ -3,8 +3,9 @@ import { useState } from 'react';
 const byname = () => {
   const [ searchParams, setSearchParams ] = useState('')
   const [ drink, setDrink ] = useState(null)
+  const API_Key = process.env.API_KEY
   const header = {
-    headers: { 'X-Api-Key': 'Ckm/gxRY9hyBCggJ8xbVCw==14MRyY95bA1cusbO'}
+    headers: { 'X-Api-Key': `${API_Key}`}
   }
   const handleSubmit = async () => {
     const res = await fetch(`https://api.api-ninjas.com/v1/cocktail?name=${searchParams}`, header)

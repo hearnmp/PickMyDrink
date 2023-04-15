@@ -32,19 +32,21 @@ const byname = () => {
             className='border rounded-md p-3 text-xl w-1/5'
             onClick={() => handleSubmit()}>Search Our Database</button>
         </div>
-        <div>
+        <div className='flex justify-center items-center flex-col w-full'>
           {drink && drink.length ? 
               drink.map(drink => (
-                <div key={drink.id}>
-                  <h1 className='text-white'>{drink.name}</h1>
-                  <h2 className='text-white'>Ingredients:</h2>
-                  {drink.ingredients ? 
-                    drink.ingredients.map((ing, idx) => (
-                      <li key={idx} className='text-white'>{ing}</li>
-                    ))
-                  : null}
-                  <h2 className='text-white'>Instructions:</h2>
-                  <p className='text-white'>{drink.instructions}</p>
+                <div key={drink.id} className='flex w-3/4 text-center flex-col items-center justify-center border p-5 m-4 rounded-md'>
+                  <h1 className='text-3xl capitalize mb-10'>{drink.name}</h1>
+                  <h2 className='text-2xl mb-5'>Ingredients:</h2>
+                  <div className='border p-2 rounded-md mb-10 w-1/2'>
+                    {drink.ingredients ? 
+                      drink.ingredients.map((ing, idx) => (
+                        <li className='text-xl capitalize' key={idx}>{ing}</li>
+                      ))
+                    : null}
+                  </div>
+                  <h2 className='text-2xl mb-5'>Instructions:</h2>
+                  <p className='text-xl normal-case'>{drink.instructions}</p>
                 </div>
               ))
           : null}

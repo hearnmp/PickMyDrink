@@ -39,8 +39,8 @@ const byname = () => {
                   <h1 className='text-white'>{drink.name}</h1>
                   <h2 className='text-white'>Ingredients:</h2>
                   {drink.ingredients ? 
-                    drink.ingredients.map(ing => (
-                      <li className='text-white'>{ing}</li>
+                    drink.ingredients.map((ing, idx) => (
+                      <li key={idx} className='text-white'>{ing}</li>
                     ))
                   : null}
                   <h2 className='text-white'>Instructions:</h2>

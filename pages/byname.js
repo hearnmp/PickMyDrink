@@ -3,14 +3,16 @@ import { useState } from 'react';
 
 const byname = () => {
   const [ searchParams, setSearchParams ] = useState('')
+  const [ drink, setDrink ] = useState(null)
   const header = {
     headers: { 'X-Api-Key': 'Ckm/gxRY9hyBCggJ8xbVCw==14MRyY95bA1cusbO'}
   }
   const handleSubmit = async () => {
     const res = await fetch(`https://api.api-ninjas.com/v1/cocktail?name=${searchParams}`, header)
     const data = await res.json()
-    console.log(data)
+    setDrink(data)
   }
+
 
   return (
     <>
@@ -29,6 +31,23 @@ const byname = () => {
           <button 
             className='border rounded-md p-3 text-xl w-1/5'
             onClick={() => handleSubmit()}>Search Our Database</button>
+        </div>
+        <div>
+          {drink && drink.length ? 
+              drink.map(drink => (
+                <div key={drink.id}>
+                  <h1 className='text-white'>{drink.name}</h1>
+                  <h2 className='text-white'>Ingredients:</h2>
+                  {drink.ingredients ? 
+                    drink.ingredients.map(ing => (
+                      <li className='text-white'>{ing}</li>
+                    ))
+                  : null}
+                  <h2 className='text-white'>Instructions:</h2>
+                  <p className='text-white'>{drink.instructions}</p>
+                </div>
+              ))
+          : null}
         </div>
       </main>
     </>

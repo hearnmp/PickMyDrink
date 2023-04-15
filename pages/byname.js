@@ -45,7 +45,11 @@ const byname = () => {
                   <p className='text-xl normal-case'>{drink.instructions}</p>
                 </div>
               ))
-          : null}
+          : 
+            <div className='mt-10'>
+              <h1 className='text-2xl'>Nothing to show :(</h1>
+            </div>
+          }
         </div>
       </main>
     </>

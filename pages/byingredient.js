@@ -18,9 +18,9 @@ const byingredient = () => {
       <main className="flex items-center justify-center flex-col min-h-screen min-w-full mt-15 bg-blue">
         <div className='mt-35 w-screen'>
           <div className="text-center mb-10">
-            <h1 className="text-4xl mb-10 text-gray">Looking for something new?<br/>Enter your ingredients below</h1>
-            <h1 className="text-3xl mb-5 text-gray">Separate ingredients by commas</h1>
-            <h1 className='text-2xl text-gray'>Ex. Vodka, Lemon Juice</h1>
+            <h1 className="text-4xl mb-10 text-navy">Looking for something new?<br/>Enter your ingredients below</h1>
+            <h1 className="text-3xl mb-5 text-navy">Separate ingredients by commas</h1>
+            <h1 className='text-2xl text-navy'>Ex. Vodka, Lemon Juice</h1>
           </div>
           <div className="flex flex-col items-center w-3/4 m-auto">
             <input 
@@ -51,7 +51,7 @@ const byingredient = () => {
               ))
           : 
             <div className='mt-10'>
-              <h1 className='text-2xl text-gray'>Nothing to show :(</h1>
+              <h1 className='text-2xl text-navy'>Nothing to show :(</h1>
             </div>
           }
         </div>

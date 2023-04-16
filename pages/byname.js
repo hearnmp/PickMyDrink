@@ -18,8 +18,8 @@ const byname = () => {
     <>
       <main className="flex items-center justify-center flex-col min-h-screen min-w-full bg-blue">
         <div className="text-center mb-10">
-          <h1 className="text-4xl mb-10 text-gray">Need to see the recipe?<br/>We've got you covered!</h1>
-          <h1 className="text-3xl mb-5 text-gray">Enter the drink name below:</h1>
+          <h1 className="text-4xl mb-10 text-navy">Need to see the recipe?<br/>We've got you covered!</h1>
+          <h1 className="text-3xl mb-5 text-navy">Enter the drink name below:</h1>
         </div>
         <div className="flex flex-col items-center w-3/4">
           <input
@@ -48,7 +48,7 @@ const byname = () => {
               ))
           : 
             <div className='mt-10'>
-              <h1 className='text-2xl text-gray'>Nothing to show :(</h1>
+              <h1 className='text-2xl text-navy'>Nothing to show :(</h1>
             </div>
           }
         </div>

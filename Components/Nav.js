@@ -10,7 +10,7 @@ const Nav = () => {
   const [ open, setOpen ] = useState(false)
   return (
     <>
-      <div className="flex w-full h-15 bg-orange self-end fixed top-0 right-0 drop-shadow-lg">
+      <div className="flex w-full h-15 bg-orange self-end top-0 right-0 drop-shadow-lg">
         <div className='hover:cursor-pointer hover:translate-x-1 text-navy'><MenuIcon onClick={() => setOpen(true)} sx={{ fontSize: 60 }}/></div>
       </div>
       <MUIDrawer 

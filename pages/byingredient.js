@@ -20,9 +20,9 @@ const byingredient = () => {
       <main className="flex items-center justify-center flex-col min-h-screen min-w-full bg-blue">
         <div className='mt-35 w-screen'>
           {searched ? 
-          <div className='flex items-center justify-center w-full text-center' onClick={() => setSearched(false)}>
-            <h1 className='text-4xl mb-5 mt-8 text-navy hover:cursor-pointer'>Return to search</h1>
-          </div>
+            <div className='flex items-center justify-center w-full text-center' onClick={() => setSearched(false)}>
+              <h1 className='text-4xl mb-5 mt-8 text-navy hover:cursor-pointer'>Return to search</h1>
+            </div>
           :
           <>
             <div className="text-center mb-10">

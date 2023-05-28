@@ -29,7 +29,7 @@ const byingredient = () => {
             <button
               className='text-yellow drop-shadow-2xl font-bold ease-in-out duration-500 hover:-translate-y-2 rounded-md p-5 text-xl bg-orange border-yellow border-4 w-1/5'
               onClick={() => handleSubmit()}
-              >Search Drink Options</button>
+            >Search Drink Options</button>
           </div>
         </div>
         <div className='flex justify-center items-center flex-col w-full'>
